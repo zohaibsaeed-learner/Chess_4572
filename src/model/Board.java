@@ -1,6 +1,8 @@
-package chess.model;
+package model;
 
-public class Board {
+import java.io.Serializable;
+
+public class Board implements Serializable {
     private Piece[][] grid = new Piece[8][8];
 
     public Board() {

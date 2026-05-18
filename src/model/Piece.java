@@ -1,6 +1,8 @@
 package model;
 
-public abstract class Piece {
+import java.io.Serializable;
+
+public abstract class Piece implements Serializable {
     private String color;
 
     public Piece(String color) {
