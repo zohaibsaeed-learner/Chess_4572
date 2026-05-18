@@ -1,10 +1,15 @@
-package model;
+package chess.model;
 
 public class Board {
     private Piece[][] grid = new Piece[8][8];
 
     public Board() {
         initBoard();
+    }
+
+    // Empty constructor for MoveValidator's copyBoard()
+    public Board(boolean empty) {
+        // intentionally empty, no initBoard()
     }
 
     public Piece getPiece(int row, int col) {
@@ -47,7 +52,7 @@ public class Board {
     public void printBoard() {
         for (int r = 0; r < 8; r++) {
             for (int c = 0; c < 8; c++) {
-                System.out.print(grid[r][c] == null ? "-- " : grid[r][c].getColor().charAt(0) + "P ");
+                System.out.print(grid[r][c] == null ? "-- " : grid[r][c].getColor().charAt(0) + grid[r][c].getSymbol() + " ");
             }
             System.out.println();
         }

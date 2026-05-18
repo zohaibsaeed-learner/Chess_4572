@@ -6,6 +6,9 @@ public class Queen extends Piece {
     }
 
     @Override
+    public String getSymbol() { return "Q"; }
+
+    @Override
     public boolean isValidMove(int fromRow, int fromCol, int toRow, int toCol, Piece[][] board) {
         return false; // Abubaker fills this
     }

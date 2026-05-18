@@ -11,5 +11,7 @@ public abstract class Piece {
         return color;
     }
 
+    public abstract String getSymbol();
+
     public abstract boolean isValidMove(int fromRow, int fromCol, int toRow, int toCol, Piece[][] board);
 }

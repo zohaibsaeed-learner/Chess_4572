@@ -6,6 +6,9 @@ public class Knight extends Piece {
     }
 
     @Override
+    public String getSymbol() { return "N"; }
+
+    @Override
     public boolean isValidMove(int fromRow, int fromCol, int toRow, int toCol, Piece[][] board) {
         return false; // Abubaker fills this
     }

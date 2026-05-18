@@ -6,6 +6,9 @@ public class Pawn extends Piece {
     }
 
     @Override
+    public String getSymbol() { return "P"; }
+
+    @Override
     public boolean isValidMove(int fromRow, int fromCol, int toRow, int toCol, Piece[][] board) {
         return false; // Abubaker fills this
     }
