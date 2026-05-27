@@ -1,6 +1,7 @@
-import model.Piece;
 import model.Board;
+import model.Piece;
 import persistence.BoardSerializer;
+import logic.MoveValidator;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,5 +24,14 @@ public class Main {
 
         System.out.println("After loading:");
         board.printBoard();
+
+        // MoveValidator tests
+        MoveValidator validator = new MoveValidator();
+
+        System.out.println("Pawn one step forward: " + validator.isValidMove(6, 0, 5, 0, board));
+        System.out.println("Pawn two steps forward: " + validator.isValidMove(6, 0, 4, 0, board));
+        System.out.println("Pawn backward: " + validator.isValidMove(6, 0, 7, 0, board));
+        System.out.println("Rook blocked: " + validator.isValidMove(7, 0, 5, 0, board));
+        System.out.println("Knight jump: " + validator.isValidMove(7, 1, 5, 2, board));
     }
 }
