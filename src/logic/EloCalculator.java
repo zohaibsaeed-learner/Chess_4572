@@ -1,8 +1,10 @@
+package logic;
+
 public class EloCalculator {
     private static final int K_FACTOR = 32;
 
     public int calculateNewRating(int currentElo, int opponentElo, String matchResult, boolean isPlayer1) {
-        
+
         double ratingDifference = (double) (opponentElo - currentElo);
         double expectedScore = 1.0 / (1.0 + Math.pow(10.0, ratingDifference / 400.0));
 
@@ -14,7 +16,7 @@ public class EloCalculator {
     }
 
     private double getActualScore(String matchResult, boolean isPlayer1) {
-        
+
         // Converts Talha's incoming string to uppercase to avoid case-sensitive bugs
         String result = matchResult.toUpperCase();
 
