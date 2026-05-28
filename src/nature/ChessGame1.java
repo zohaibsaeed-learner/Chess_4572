@@ -1,7 +1,7 @@
 package nature;
 import java.util.Scanner;
 
-public class ChessGame {
+public class ChessGame1 {
     private GameState gameState;
     private Scanner inputScanner;
     private boolean isRunning;

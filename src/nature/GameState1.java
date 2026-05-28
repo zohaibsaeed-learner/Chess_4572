@@ -12,11 +12,11 @@ enum GameStatus {
  * GameState handles the turn-tracking, status monitoring,
  * and state transitions for the chess match.
  */
-public class GameState {
+public class GameState1 {
     private GameStatus currentStatus;
 
     // Default constructor: A fresh chess game always starts with White's turn
-    public GameState() {
+    public GameState1() {
         this.currentStatus = GameStatus.WHITE_TURN;
     }
 

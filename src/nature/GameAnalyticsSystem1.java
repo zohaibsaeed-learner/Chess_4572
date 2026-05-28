@@ -135,11 +135,11 @@ class GameOverDialog {
 // =========================================================================
 // 4. MAIN PROGRAM MANAGEMENT EXECUTION
 // =========================================================================
-public class GameAnalyticsSystem {
+public class GameAnalyticsSystem1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Setting up two test player profiles
+        // Setting up two test player pGaofiles
         PlayerStats player1 = new PlayerStats("Alice");
         PlayerStats player2 = new PlayerStats("Bob");
 

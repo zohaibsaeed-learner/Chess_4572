@@ -142,7 +142,7 @@ class King extends Piece {
 // ==========================================
 // 5. DEMO / VERIFICATION CLASS
 // ==========================================
-public class QueenandKing{
+public class QandK{
     public static void main(String[] args) {
         // Initialize an empty 8x8 board matrix
         Piece[][] board = new Piece[8][8];
